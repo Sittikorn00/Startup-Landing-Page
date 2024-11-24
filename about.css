@@ -1,0 +1,62 @@
+/* About Section */
+.about {
+    padding: 60px 20px;
+    background-color: #f9f9f9; /* สีพื้นหลังของส่วน About */
+  }
+  
+  .about-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .about-left {
+    flex: 1 1 500px;
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .about-left h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .about-left p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-left button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .about-left button:hover {
+    background-color: #0056b3;
+  }
+  
+  .about-right {
+    flex: 1 1 500px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-right img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

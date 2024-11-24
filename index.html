@@ -7,6 +7,7 @@
   <title>Meecare</title>
   <link rel="shortcut icon" href="/image/Icon.png" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -20,10 +21,11 @@
     </div>
     <div class="nav-items">
       <ul>
-        <li><a href="#service" class="underline-effect">Service</a></li>
-        <li><a href="#about" class="underline-effect">About</a></li>
+        <li><a href="#Service" class="underline-effect">Service</a></li>
+        <li><a href="about.html" class="underline-effect">About</a></li>
         <li><a href="#contact" class="underline-effect">Contact Us</a></li>
       </ul>
+    </div> <!-- ปิด div.nav-items -->
   </nav>
   <section class="hero">
     <div class="hero-container">
@@ -33,34 +35,97 @@
           We are medical application for pets that offers consultation services, nearby veterinary clinic searches, an
           in-app pet supplies marketplace, and database management solutions for veterinary clinics.
         </p>
-        <button>Get Started</button>
+        <button onclick="location.href='about.html'">Get Started</button>
       </div>
       <div class="column-right">
         <img src="/image/hero.png" class="hero-image">
       </div>
     </div>
   </section>
+  <section class="service">
+    <div class="section-title" id="Service">Features & Services</div>
+  </section>
   <section class="grid">
     <div class="grid-item">
       <img src="/image/card1.png" alt="Affordable Pet Care">
-      <h2>Affordable Pet Care</h2>
+      <h2 style="color: #813d32;">Affordable Pet Care</h2>
       <p>Focus on reducing pet care costs by offering affordable pet health check-ups and recommending efficient,<br>high-quality services to ensure the best value for pet owners.</p>
-      <button class="learn-more">Learn More</button>    
+      <button class="learn-more" onclick="location.href='#APC'">Learn More</button>
     </div>
     <div class="grid-item">
       <img src="/image/card2.png" alt="Easy Vet Access">
-      <h2>Easy Vet Access</h2>
+      <h2 style="color: #813d32;">Easy Vet Access</h2>
       <p>Focus on providing users with easy access to veterinary consultations, such as offering a 24/7 private chat room with veterinarians, allowing convenient video calls for pet health assessments anytime.</p>
-      <button class="learn-more">Learn More</button>
+      <button class="learn-more" onclick="location.href='#EVA'">Learn More</button>
     </div>
     <div class="grid-item">
       <img src="/image/card3.png" alt="Pet Health Guidence">
-      <h2>Pet Health Guidence</h2>
+      <h2 style="color: #813d32;">Pet Health Guidence</h2>
       <p>Provide valuable information to help pet owners improve their pets' health, such as personalized advice on proper nutrition and suitable exercise routines for optimal well-being.</p>
-      <button class="learn-more">Learn More</button>
+      <button class="learn-more" onclick="location.href='#PHG'">Learn More</button>
     </div>
   </section>
+  <section class="hero-affordable-pet-care" id="APC">
+    <div class="hero-container">
+      <div class="hero-service-container">
+        <div class="column-left">
+          <h1>Affordable Pet Care</h1>
+          <p>We offer affordable pet health check-ups and recommend efficient, high-quality services to ensure the best value for pet owners.</p>
+        </div>
+        <div class="column-right">
+          <img src="/image/card1.png" alt="Affordable Pet Care Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero-affordable-pet-care" id="EVA">
+    <div class="hero-container">
+      <div class="hero-service-container">
+        <div class="column-left">
+          <h1>Easy Vet Access</h1>
+          <p>We offer affordable pet health check-ups and recommend efficient, high-quality services to ensure the best value for pet owners.</p>
+        </div>
+        <div class="column-right">
+          <img src="/image/card2.png" alt="Affordable Pet Care Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero-affordable-pet-care" id="PHG">
+    <div class="hero-container">
+      <div class="hero-service-container">
+        <div class="column-left">
+          <h1>Pet Health Guidence</h1>
+          <p>We offer affordable pet health check-ups and recommend efficient, high-quality services to ensure the best value for pet owners.</p>
+        </div>
+        <div class="column-right">
+          <img src="/image/card3.png" alt="Affordable Pet Care Image">
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-container">
+      <div class="footer-logo">
+        <a href="index.html"><img src="/image/Logo.png" alt="Meecare Logo"></a>
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="#Service">Service</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a href="https://twitter.com" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a href="https://instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Meecare. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 <script src="script.js"></script>
-
 </html>

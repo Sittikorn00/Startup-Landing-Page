@@ -446,7 +446,7 @@ footer {
 .hero-affordable-pet-care {
   background-color: antiquewhite;
   /* สามารถเลือกพื้นหลังตามต้องการ */
-  padding: 60px 0;
+  padding: 20px;
   text-align: left;
 }
 
@@ -571,6 +571,7 @@ footer {
 
   .hero-container {
     grid-template-columns: 1fr;
+    flex-direction: column;
     padding: 2rem;
     text-align: center;
     margin-bottom: 15rem;
@@ -583,6 +584,12 @@ footer {
 
   .column-right {
     margin: 2rem 0;
+  }
+
+  .column-right img {
+    max-width: 80%; /* ลดขนาดรูปภาพให้เหมาะสม */
+    height: auto; /* คงสัดส่วนของภาพ */
+    margin: 0 auto; /* จัดให้อยู่กลาง */
   }
 
   .grid-item img {
@@ -610,21 +617,9 @@ footer {
   }
 
   .hero-service-container {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .hero-service-container>div {
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-  .hero-service-container img {
-    max-width: 100%;
-    /* ปรับขนาดภาพให้เต็มความกว้าง */
-    height: auto;
-    margin: 0 auto;
-    /* จัดภาพให้อยู่กลาง */
+    overflow: hidden; /* ป้องกันเนื้อหาทะลุออก */
+    padding: 10px;
+    box-sizing: border-box;
   }
 
   .footer-container {
@@ -672,12 +667,10 @@ footer {
   }
 
   .hero-service-container img {
-    max-width: 80%;
-    /* ลดขนาดภาพ */
-    margin: 0 auto;
-    /* จัดภาพให้อยู่กลาง */
-    display: block;
-  }
+    display: block; /* แสดงภาพ */
+    max-width: 80%; /* ปรับขนาดภาพ */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+}
 
   .hero-service-container h1,
   .hero-service-container p {

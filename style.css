@@ -10,6 +10,10 @@
   src: url('/font/Cloud\ Soft-Light.ttf') format('truetype');
 }
 
+body {
+  background-color: antiquewhite;
+}
+
 /* Navigation Bar */
 nav {
   height: 80px;
@@ -42,7 +46,7 @@ nav a:hover {
 }
 
 .logo img {
-  height: 70px;
+  max-width: 150px;;
 }
 
 .nav-items {
@@ -129,31 +133,18 @@ nav a:hover {
 }
 
 .hero-service-container {
-  display: flex;
-  flex-wrap: wrap;
-  grid-template-columns: 1fr 1fr;
-  height: 75vh;
-  width: 1400px;
-  padding: 3rem calc((100vw - 1300px) / 2);
-  gap: 2rem;
-  background-color: white;
-  border-radius: 15px;
-  border: 4px solid #813d32;
-  transition: 0.3s;
+  width: 100%;
+  /* ใช้ความกว้างเต็ม */
+  max-width: 1200px;
+  /* จำกัดความกว้างสูงสุด */
+  padding: 20px;
+  /* เพิ่ม padding ให้เหมาะสม */
+  margin: 0 auto;
+  /* จัดให้อยู่กลาง */
+  box-sizing: border-box;
+  /* รักษา padding ให้อยู่ในขอบเขต */
 }
 
-.hero-service-container>div {
-  flex: 1 1 100%;
-  /* กำหนดให้แต่ละคอลัมน์ครอบ 100% ของความกว้าง */
-  max-width: 100%;
-  /* ป้องกันการล้นขอบ */
-  margin-bottom: 1rem;
-  /* เพิ่มระยะห่างระหว่างคอลัมน์ */
-}
-
-.hero-service-container:hover {
-  box-shadow: 6px 6px 6px 6px rgba(0.1, 0, 0, 0.1);
-}
 
 .hero-service-container img {
   width: 100%;
@@ -161,6 +152,7 @@ nav a:hover {
   max-width: 500px;
   /* จำกัดความกว้างของภาพ */
   height: auto;
+  overflow: hidden;
 }
 
 .column-left {
@@ -190,6 +182,19 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   padding: 0 2rem;
+}
+
+.column-right img {
+  width: auto;
+  /* ใช้ความกว้างอัตโนมัติ */
+  max-width: 100%;
+  /* จำกัดขนาดให้ไม่เกิน container */
+  height: auto;
+  /* รักษาสัดส่วน */
+  display: block;
+  /* ป้องกัน space ด้านข้าง */
+  margin: 0 auto;
+  /* จัดให้อยู่กลาง */
 }
 
 button {
@@ -227,6 +232,7 @@ button:hover {
   padding: 3rem 2rem;
   background-color: antiquewhite;
   /* สีพื้นหลังสำหรับ section */
+  margin-bottom: 60px;
 }
 
 .grid-item {
@@ -448,6 +454,7 @@ footer {
   /* สามารถเลือกพื้นหลังตามต้องการ */
   padding: 20px;
   text-align: left;
+  margin-bottom: 170px;
 }
 
 .hero-affordable-pet-care .hero-container {
@@ -587,9 +594,14 @@ footer {
   }
 
   .column-right img {
-    max-width: 80%; /* ลดขนาดรูปภาพให้เหมาะสม */
-    height: auto; /* คงสัดส่วนของภาพ */
-    margin: 0 auto; /* จัดให้อยู่กลาง */
+    max-width: 80%;
+    /* ลดขนาดรูปภาพในหน้าจอเล็ก */
+    height: auto;
+    /* คงอัตราส่วน */
+    margin: 0 auto;
+    /* จัดให้อยู่กลาง */
+    object-fit: cover;
+    /* ครอบรูปภาพให้เหมาะสม */
   }
 
   .grid-item img {
@@ -617,9 +629,18 @@ footer {
   }
 
   .hero-service-container {
-    overflow: hidden; /* ป้องกันเนื้อหาทะลุออก */
-    padding: 10px;
-    box-sizing: border-box;
+    flex-direction: column;
+    /* เรียงในแนวตั้ง */
+    align-items: center;
+    text-align: center;
+    padding: 10px 10px 0 10px;
+    /* ลด padding */
+    margin: 10px;
+  }
+
+  .hero-service-container img {
+    height: auto;
+    margin: 0 auto;
   }
 
   .footer-container {
@@ -662,16 +683,6 @@ footer {
     max-width: 80%;
   }
 
-  .hero-service-container {
-    grid-template-columns: 1fr;
-  }
-
-  .hero-service-container img {
-    display: block; /* แสดงภาพ */
-    max-width: 80%; /* ปรับขนาดภาพ */
-    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
-}
-
   .hero-service-container h1,
   .hero-service-container p {
     font-size: 1.2rem;
@@ -680,27 +691,4 @@ footer {
     /* จัดข้อความให้อยู่กลาง */
   }
 
-}
-
-@media screen and (max-width: 480px) {
-  nav a {
-    padding: 0 1rem;
-  }
-
-  button {
-    padding: 0.8rem 2rem;
-    font-size: 0.9rem;
-  }
-
-  .column-left h1 {
-    font-size: 2.5rem;
-  }
-
-  .column-left p {
-    font-size: 1.2rem;
-  }
-
-  img {
-    max-width: 90%;
-  }
 }

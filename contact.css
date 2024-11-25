@@ -1,0 +1,326 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'CloudSoft', sans-serif;
+}
+
+@font-face {
+    font-family: 'CloudSoft';
+    src: url('../font/CloudSoft-Light.ttf') format('truetype');
+}
+
+/* Navigation Bar */
+nav {
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #813d32;
+    padding: 0 1.5rem;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fdcc04;
+}
+
+/* Logo in Navbar */
+.logo {
+    padding: 0 3rem;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-items ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+.nav-items ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-items ul li a:hover {
+    color: #813d32;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    /* ซ่อน Hamburger Menu ในหน้าจอใหญ่ */
+    position: absolute;
+    right: 1rem;
+    /* ชิดขอบขวา */
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #813d32;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.hamburger:hover span {
+    background: #fdcc04;
+}
+
+/* Effect */
+
+/* Underline Navbar */
+.underline-effect {
+    display: inline-block;
+    position: relative;
+}
+
+.underline-effect::after {
+    content: "";
+    position: absolute;
+    background-color: #fdcc04;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+.underline-effect:hover::after {
+    width: 100%;
+}
+
+.hero-container2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 70vh;
+    padding: 3rem;
+    gap: 2rem;
+    background-color: antiquewhite;
+
+}
+
+.contact {
+    padding: 4rem 2rem;
+    background-color: antiquewhite;
+    text-align: center;
+    color: #813d32;
+}
+
+.contact h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-info {
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.contact-form {
+    width: 100%;
+    max-width: 600px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #813d32;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #813d32;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.contact-form button:hover {
+    background-color: #fdcc04;
+    color: black;
+}
+
+.column-left2,
+.column-right2 img {
+    width: 100%;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 20px;
+    height: auto;
+
+}
+
+footer {
+    background-color: white;
+    /* พื้นหลังสีเข้ม */
+    color: #813d32;
+    /* สีข้อความขาว */
+    padding: 40px 20px;
+    /* ช่องว่างด้านใน */
+    text-align: center;
+    font-weight: bolder;
+}
+
+.footer-container {
+    display: flex;
+    /* ใช้ flexbox ในการจัดเรียง */
+    justify-content: space-between;
+    /* จัดเรียงไอเท็มให้กระจาย */
+    align-items: center;
+    /* จัดให้แนวตั้งตรงกลาง */
+    max-width: 1250px;
+    /* กำหนดความกว้างสูงสุด */
+    margin: 0 auto;
+    /* จัดให้อยู่กลาง */
+}
+
+.footer-logo img {
+    max-width: 150px;
+    /* กำหนดขนาดของโลโก้ */
+}
+
+.footer-links ul {
+    list-style: none;
+    /* ลบจุดจากลิสต์ */
+    padding: 0;
+    display: flex;
+    /* ใช้ flexbox ในการจัดเรียงลิงก์ */
+}
+
+.footer-links ul li {
+    margin: 0 15px;
+    /* ช่องว่างระหว่างลิงก์ */
+}
+
+.footer-links a {
+    text-decoration: none;
+    /* ลบขีดเส้นใต้ */
+    color: black;
+    /* สีลิงก์ขาว */
+    font-weight: bolder;
+    /* ข้อความหนานิดหน่อย */
+}
+
+.footer-links a:hover {
+    color: #813d32;
+    /* เปลี่ยนสีเมื่อ hover */
+}
+
+.footer-social a {
+    color: #813d32;
+    /* สีไอคอนโซเชียลขาว */
+    margin: 0 10px;
+    /* ช่องว่างระหว่างไอคอน */
+    font-size: 24px;
+    /* ขนาดของไอคอน */
+}
+
+.footer-social a:hover {
+    color: black;
+    /* เปลี่ยนสีเมื่อ hover */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    /* ช่องว่างระหว่างส่วนท้าย */
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    /* ขนาดตัวอักษร */
+}
+
+@media (max-width: 760px) {
+    .hamburger {
+        display: flex;
+        /* แสดง Hamburger Menu */
+        top: 50%;
+        /* วางตำแหน่ง Hamburger ตรงกลางแนวตั้ง */
+        transform: translateY(-50%);
+      }
+    
+      nav {
+        justify-content: center;
+        /* ให้โลโก้อยู่ตรงกลาง */
+        position: sticky;
+        /* ตั้งตำแหน่งให้ Hamburger และ Logo ทำงานร่วมกัน */
+        padding: 0 1rem;
+      }
+    
+      button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.8rem;
+      }
+    
+      .logo {
+        position: absolute;
+        /* วางโลโก้ตรงกลาง */
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    
+      .nav-items {
+        display: none;
+        /* ซ่อนเมนู */
+        position: absolute;
+        top: 80px;
+        right: 0;
+        left: 0;
+        background: #ffffff;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+    
+      .nav-items.active {
+        display: flex;
+        /* แสดงเมนูเมื่อมี class active */
+      }
+    
+      .nav-items ul {
+        flex-direction: column;
+        gap: 1rem;
+      }
+    
+      .nav-items ul li {
+        text-align: center;
+      }
+}

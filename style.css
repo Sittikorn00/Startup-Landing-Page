@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'CloudSoft';
-  src: url('../font/CloudSoft-Light.ttf') format('truetype');
+  src: url('font/CloudSoft-Light.ttf') format('truetype');
 }
 
 body {
@@ -46,7 +46,8 @@ nav a:hover {
 }
 
 .logo img {
-  max-width: 150px;;
+  max-width: 150px;
+  ;
 }
 
 .nav-items {

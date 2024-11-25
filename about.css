@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: 'CloudSoft';
-  src: url('/font/Cloud\ Soft-Light.ttf') format('truetype');
+  src: url('../font/CloudSoft-Light.ttf') format('truetype');
 }
 
 /* Navigation Bar */
@@ -145,6 +145,8 @@ nav a:hover {
 .Member {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  transition: all 0.3s ease-in-out;
 }
 
 .Member-info {
@@ -153,15 +155,16 @@ nav a:hover {
 }
 
 .Member-info a {
-  text-decoration: none;
-  padding: 0.6rem 1.5rem;
-  font-weight: bolder;
-  border: none;
-  color: white;
-  background: #813d32;
-  cursor: pointer;
-  border-radius: 50px;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none; /* ลบขีดเส้นใต้ลิงก์ */
+  padding: 0.6rem 1.5rem; /* ขนาดปุ่ม */
+  font-size: 0.9rem; /* ขนาดฟอนต์ในปุ่ม */
+  font-weight: bolder; /* เพิ่มความหนาของข้อความ */
+  border: none; /* ลบขอบปุ่ม */
+  color: white; /* สีข้อความในปุ่ม */
+  background: #813d32; /* สีพื้นหลังของปุ่ม */
+  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นแบบคลิกได้ */
+  border-radius: 50px; /* มุมโค้งของปุ่ม */
+  transition: background-color 0.3s ease, color 0.3s ease; /* เอฟเฟกต์เปลี่ยนสี */
 }
 
 .Member-info a:hover {
@@ -170,15 +173,34 @@ nav a:hover {
 }
 
 .Member-info img {
-  width: 150px;
-  border-radius: 100%;
-  box-shadow: 0 0 10px #333;
+  width: 150px; /* ขนาดกว้างของรูป */
+  height: 150px; /* ขนาดสูงของรูป */
+  border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
+  object-fit: cover; /* ปรับรูปให้ครอบเต็มพื้นที่ */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+  margin-bottom: 1rem; /* เพิ่มช่องว่างใต้รูป */
+}
+
+.Member-info h3 {
+  font-size: 1.2rem; /* ขนาดฟอนต์ชื่อ */
+  font-weight: bold; /* ทำให้ตัวอักษรหนา */
+  margin-bottom: 0.5rem; /* เพิ่มช่องว่างระหว่างชื่อกับตำแหน่ง */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Member-info p {
+  font-size: 1rem; /* ขนาดฟอนต์สำหรับตำแหน่งหรือคำอธิบาย */
+  color: #666; /* สีข้อความตำแหน่ง */
+  margin-bottom: 1rem; /* เพิ่มช่องว่างระหว่างข้อความและปุ่ม */
 }
 
 .M {
-  padding: 2rem;
-  color: #fcc43e;
-  text-align: center;
+  display: flex; /* ใช้ Flexbox เพื่อจัดวางรูป */
+  justify-content: center; /* จัดรูปให้อยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดรูปให้อยู่ตรงกลางแนวตั้ง */
+  padding: 2rem; /* ระยะห่างรอบ */
 }
 
 footer {
@@ -259,6 +281,34 @@ footer {
 .footer-bottom p {
   font-size: 14px;
   /* ขนาดตัวอักษร */
+}
+
+@media (max-width: 1024px) {
+  .Member {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .M {
+    padding: 1.5rem; /* ลด Padding */
+  }
+
+  .M img {
+    max-width: 80%; /* ลดขนาดรูปเมื่อหน้าจอเล็ก */
+  }
+}
+
+@media (max-width: 480px) {
+  .Member {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .M {
+    padding: 1rem; /* ลด Padding เพิ่มเติม */
+  }
+
+  .M img {
+    max-width: 100%; /* รูปภาพขยายเต็มความกว้างของ Section */
+  }
 }
 
 @media (max-width: 1280px) {
@@ -343,6 +393,11 @@ footer {
   .nav-items ul li {
     text-align: center;
   }
+  .M {
+    padding: 1.5rem; /* ลด Padding */
+  }
 
-
+  .M img {
+    max-width: 80%; /* ลดขนาดรูปเมื่อหน้าจอเล็ก */
+  }
 }

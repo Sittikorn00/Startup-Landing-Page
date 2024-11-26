@@ -10,7 +10,6 @@
   src: url('../font/CloudSoft-Light.ttf') format('truetype');
 }
 
-/* Navigation Bar */
 nav {
   height: 80px;
   background: #ffffff;
@@ -36,7 +35,6 @@ nav a:hover {
   color: #fdcc04;
 }
 
-/* Logo in Navbar */
 .logo {
   padding: 0 3rem;
 }
@@ -66,13 +64,10 @@ nav a:hover {
   color: #813d32;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
-  /* ซ่อน Hamburger Menu ในหน้าจอใหญ่ */
   position: absolute;
   right: 1rem;
-  /* ชิดขอบขวา */
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
@@ -90,9 +85,6 @@ nav a:hover {
   background: #fdcc04;
 }
 
-/* Effect */
-
-/* Underline Navbar */
 .underline-effect {
   display: inline-block;
   position: relative;
@@ -120,7 +112,6 @@ nav a:hover {
   padding: 3rem;
   gap: 2rem;
   background-color: antiquewhite;
-
 }
 
 .column-left2,
@@ -136,10 +127,8 @@ nav a:hover {
 .column-right2 img {
   max-width: 100%;
   height: auto;
-  /* รักษาอัตราส่วนของภาพ */
   display: block;
   margin: 0 auto;
-  /* จัดภาพให้อยู่ตรงกลาง */
 }
 
 .Member {
@@ -155,16 +144,16 @@ nav a:hover {
 }
 
 .Member-info a {
-  text-decoration: none; /* ลบขีดเส้นใต้ลิงก์ */
-  padding: 0.6rem 1.5rem; /* ขนาดปุ่ม */
-  font-size: 0.9rem; /* ขนาดฟอนต์ในปุ่ม */
-  font-weight: bolder; /* เพิ่มความหนาของข้อความ */
-  border: none; /* ลบขอบปุ่ม */
-  color: white; /* สีข้อความในปุ่ม */
-  background: #813d32; /* สีพื้นหลังของปุ่ม */
-  cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นแบบคลิกได้ */
-  border-radius: 50px; /* มุมโค้งของปุ่ม */
-  transition: background-color 0.3s ease, color 0.3s ease; /* เอฟเฟกต์เปลี่ยนสี */
+  text-decoration: none;
+  padding: 0.6rem 1.5rem;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  border: none;
+  color: white;
+  background: #813d32;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .Member-info a:hover {
@@ -173,115 +162,93 @@ nav a:hover {
 }
 
 .Member-info img {
-  width: 150px; /* ขนาดความกว้างของรูป */
-  height: 150px; /* ขนาดความสูงของรูป */
-  border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
-  object-fit: cover; /* ให้รูปครอบเต็มวงกลม */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
-  margin-bottom: 1rem; /* เว้นช่องว่างด้านล่าง */
-  border: 5px solid #813d32; /* เพิ่มขอบสีรอบรูป */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+  border: 5px solid #813d32;
 }
 
 .Member-info h3 {
-  font-size: 1.2rem; /* ขนาดฟอนต์ชื่อ */
-  font-weight: bold; /* ทำให้ตัวอักษรหนา */
-  margin-bottom: 0.5rem; /* เพิ่มช่องว่างระหว่างชื่อกับตำแหน่ง */
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .Member-info p {
-  font-size: 1rem; /* ขนาดฟอนต์สำหรับตำแหน่งหรือคำอธิบาย */
-  color: #666; /* สีข้อความตำแหน่ง */
-  margin-bottom: 1rem; /* เพิ่มช่องว่างระหว่างข้อความและปุ่ม */
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
 }
 
 .M {
-  display: flex; /* ใช้ Flexbox เพื่อจัดวางรูป */
-  justify-content: center; /* จัดรูปให้อยู่ตรงกลางแนวนอน */
-  align-items: center; /* จัดรูปให้อยู่ตรงกลางแนวตั้ง */
-  padding: 2rem; /* ระยะห่างรอบ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
 }
 
 footer {
   background-color: white;
-  /* พื้นหลังสีเข้ม */
   color: #813d32;
-  /* สีข้อความขาว */
   padding: 40px 20px;
-  /* ช่องว่างด้านใน */
   text-align: center;
   font-weight: bolder;
 }
 
 .footer-container {
   display: flex;
-  /* ใช้ flexbox ในการจัดเรียง */
   justify-content: space-between;
-  /* จัดเรียงไอเท็มให้กระจาย */
   align-items: center;
-  /* จัดให้แนวตั้งตรงกลาง */
   max-width: 1250px;
-  /* กำหนดความกว้างสูงสุด */
   margin: 0 auto;
-  /* จัดให้อยู่กลาง */
 }
 
 .footer-logo img {
   max-width: 150px;
-  /* กำหนดขนาดของโลโก้ */
 }
 
 .footer-links ul {
   list-style: none;
-  /* ลบจุดจากลิสต์ */
   padding: 0;
   display: flex;
-  /* ใช้ flexbox ในการจัดเรียงลิงก์ */
 }
 
 .footer-links ul li {
   margin: 0 15px;
-  /* ช่องว่างระหว่างลิงก์ */
 }
 
 .footer-links a {
   text-decoration: none;
-  /* ลบขีดเส้นใต้ */
   color: black;
-  /* สีลิงก์ขาว */
   font-weight: bolder;
-  /* ข้อความหนานิดหน่อย */
 }
 
 .footer-links a:hover {
   color: #813d32;
-  /* เปลี่ยนสีเมื่อ hover */
 }
 
 .footer-social a {
   color: #813d32;
-  /* สีไอคอนโซเชียลขาว */
   margin: 0 10px;
-  /* ช่องว่างระหว่างไอคอน */
   font-size: 24px;
-  /* ขนาดของไอคอน */
 }
 
 .footer-social a:hover {
   color: black;
-  /* เปลี่ยนสีเมื่อ hover */
 }
 
 .footer-bottom {
   margin-top: 20px;
-  /* ช่องว่างระหว่างส่วนท้าย */
 }
 
 .footer-bottom p {
   font-size: 14px;
-  /* ขนาดตัวอักษร */
 }
 
 @media (max-width: 1024px) {
@@ -290,11 +257,11 @@ footer {
   }
 
   .M {
-    padding: 1.5rem; /* ลด Padding */
+    padding: 1.5rem;
   }
 
   .M img {
-    max-width: 80%; /* ลดขนาดรูปเมื่อหน้าจอเล็ก */
+    max-width: 80%;
   }
 }
 
@@ -304,11 +271,11 @@ footer {
   }
 
   .M {
-    padding: 1rem; /* ลด Padding เพิ่มเติม */
+    padding: 1rem;
   }
 
   .M img {
-    max-width: 100%; /* รูปภาพขยายเต็มความกว้างของ Section */
+    max-width: 100%;
   }
 }
 
@@ -340,17 +307,13 @@ footer {
 @media (max-width: 760px) {
   .hamburger {
     display: flex;
-    /* แสดง Hamburger Menu */
     top: 50%;
-    /* วางตำแหน่ง Hamburger ตรงกลางแนวตั้ง */
     transform: translateY(-50%);
   }
 
   nav {
     justify-content: center;
-    /* ให้โลโก้อยู่ตรงกลาง */
     position: sticky;
-    /* ตั้งตำแหน่งให้ Hamburger และ Logo ทำงานร่วมกัน */
     padding: 0 1rem;
   }
 
@@ -361,14 +324,12 @@ footer {
 
   .logo {
     position: absolute;
-    /* วางโลโก้ตรงกลาง */
     left: 50%;
     transform: translateX(-50%);
   }
 
   .nav-items {
     display: none;
-    /* ซ่อนเมนู */
     position: absolute;
     top: 80px;
     right: 0;
@@ -383,7 +344,6 @@ footer {
 
   .nav-items.active {
     display: flex;
-    /* แสดงเมนูเมื่อมี class active */
   }
 
   .nav-items ul {
@@ -394,11 +354,12 @@ footer {
   .nav-items ul li {
     text-align: center;
   }
+
   .M {
-    padding: 1.5rem; /* ลด Padding */
+    padding: 1.5rem;
   }
 
   .M img {
-    max-width: 80%; /* ลดขนาดรูปเมื่อหน้าจอเล็ก */
+    max-width: 80%;
   }
 }

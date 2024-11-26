@@ -10,7 +10,6 @@
     src: url('../font/CloudSoft-Light.ttf') format('truetype');
 }
 
-/* Navigation Bar */
 nav {
     height: 80px;
     background: #ffffff;
@@ -36,7 +35,6 @@ nav a:hover {
     color: #fdcc04;
 }
 
-/* Logo in Navbar */
 .logo {
     padding: 0 3rem;
 }
@@ -66,13 +64,10 @@ nav a:hover {
     color: #813d32;
 }
 
-/* Hamburger Menu */
 .hamburger {
     display: none;
-    /* ซ่อน Hamburger Menu ในหน้าจอใหญ่ */
     position: absolute;
     right: 1rem;
-    /* ชิดขอบขวา */
     cursor: pointer;
     flex-direction: column;
     gap: 5px;
@@ -90,9 +85,6 @@ nav a:hover {
     background: #fdcc04;
 }
 
-/* Effect */
-
-/* Underline Navbar */
 .underline-effect {
     display: inline-block;
     position: relative;
@@ -120,7 +112,6 @@ nav a:hover {
     padding: 3rem;
     gap: 2rem;
     background-color: antiquewhite;
-
 }
 
 .contact {
@@ -183,121 +174,92 @@ nav a:hover {
     padding: 2rem;
     border-radius: 20px;
     height: auto;
-
 }
 
 footer {
     background-color: white;
-    /* พื้นหลังสีเข้ม */
     color: #813d32;
-    /* สีข้อความขาว */
     padding: 40px 20px;
-    /* ช่องว่างด้านใน */
     text-align: center;
     font-weight: bolder;
 }
 
 .footer-container {
     display: flex;
-    /* ใช้ flexbox ในการจัดเรียง */
     justify-content: space-between;
-    /* จัดเรียงไอเท็มให้กระจาย */
     align-items: center;
-    /* จัดให้แนวตั้งตรงกลาง */
     max-width: 1250px;
-    /* กำหนดความกว้างสูงสุด */
     margin: 0 auto;
-    /* จัดให้อยู่กลาง */
 }
 
 .footer-logo img {
     max-width: 150px;
-    /* กำหนดขนาดของโลโก้ */
 }
 
 .footer-links ul {
     list-style: none;
-    /* ลบจุดจากลิสต์ */
     padding: 0;
     display: flex;
-    /* ใช้ flexbox ในการจัดเรียงลิงก์ */
 }
 
 .footer-links ul li {
     margin: 0 15px;
-    /* ช่องว่างระหว่างลิงก์ */
 }
 
 .footer-links a {
     text-decoration: none;
-    /* ลบขีดเส้นใต้ */
     color: black;
-    /* สีลิงก์ขาว */
     font-weight: bolder;
-    /* ข้อความหนานิดหน่อย */
 }
 
 .footer-links a:hover {
     color: #813d32;
-    /* เปลี่ยนสีเมื่อ hover */
 }
 
 .footer-social a {
     color: #813d32;
-    /* สีไอคอนโซเชียลขาว */
     margin: 0 10px;
-    /* ช่องว่างระหว่างไอคอน */
     font-size: 24px;
-    /* ขนาดของไอคอน */
 }
 
 .footer-social a:hover {
     color: black;
-    /* เปลี่ยนสีเมื่อ hover */
 }
 
 .footer-bottom {
     margin-top: 20px;
-    /* ช่องว่างระหว่างส่วนท้าย */
 }
 
 .footer-bottom p {
     font-size: 14px;
-    /* ขนาดตัวอักษร */
 }
 
 @media (max-width: 760px) {
     .hamburger {
         display: flex;
-        /* แสดง Hamburger Menu */
         top: 50%;
-        /* วางตำแหน่ง Hamburger ตรงกลางแนวตั้ง */
         transform: translateY(-50%);
-      }
-    
-      nav {
+    }
+
+    nav {
         justify-content: center;
-        /* ให้โลโก้อยู่ตรงกลาง */
         position: sticky;
-        /* ตั้งตำแหน่งให้ Hamburger และ Logo ทำงานร่วมกัน */
         padding: 0 1rem;
-      }
-    
-      button {
+    }
+
+    button {
         padding: 0.6rem 1.5rem;
         font-size: 0.8rem;
-      }
-    
-      .logo {
+    }
+
+    .logo {
         position: absolute;
-        /* วางโลโก้ตรงกลาง */
         left: 50%;
         transform: translateX(-50%);
-      }
-    
-      .nav-items {
+    }
+
+    .nav-items {
         display: none;
-        /* ซ่อนเมนู */
         position: absolute;
         top: 80px;
         right: 0;
@@ -308,19 +270,18 @@ footer {
         padding: 1rem;
         border-radius: 8px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      }
-    
-      .nav-items.active {
+    }
+
+    .nav-items.active {
         display: flex;
-        /* แสดงเมนูเมื่อมี class active */
-      }
-    
-      .nav-items ul {
+    }
+
+    .nav-items ul {
         flex-direction: column;
         gap: 1rem;
-      }
-    
-      .nav-items ul li {
+    }
+
+    .nav-items ul li {
         text-align: center;
-      }
+    }
 }

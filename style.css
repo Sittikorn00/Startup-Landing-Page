@@ -14,7 +14,6 @@ body {
   background-color: antiquewhite;
 }
 
-/* Navigation Bar */
 nav {
   height: 80px;
   background: #ffffff;
@@ -40,14 +39,12 @@ nav a:hover {
   color: #fdcc04;
 }
 
-/* Logo in Navbar */
 .logo {
   padding: 0 3rem;
 }
 
 .logo img {
   max-width: 150px;
-  ;
 }
 
 .nav-items {
@@ -71,13 +68,10 @@ nav a:hover {
   color: #813d32;
 }
 
-/* Hamburger Menu */
 .hamburger {
   display: none;
-  /* ซ่อน Hamburger Menu ในหน้าจอใหญ่ */
   position: absolute;
   right: 1rem;
-  /* ชิดขอบขวา */
   cursor: pointer;
   flex-direction: column;
   gap: 5px;
@@ -95,9 +89,6 @@ nav a:hover {
   background: #fdcc04;
 }
 
-/* Effect */
-
-/* Underline Navbar */
 .underline-effect {
   display: inline-block;
   position: relative;
@@ -118,8 +109,6 @@ nav a:hover {
   width: 100%;
 }
 
-
-/* Hero Section */
 .hero {
   background: #ffffff;
 }
@@ -135,23 +124,15 @@ nav a:hover {
 
 .hero-service-container {
   width: 100%;
-  /* ใช้ความกว้างเต็ม */
   max-width: 1200px;
-  /* จำกัดความกว้างสูงสุด */
   padding: 20px;
-  /* เพิ่ม padding ให้เหมาะสม */
   margin: 0 auto;
-  /* จัดให้อยู่กลาง */
   box-sizing: border-box;
-  /* รักษา padding ให้อยู่ในขอบเขต */
 }
-
 
 .hero-service-container img {
   width: 100%;
-  /* กำหนดความกว้างให้เต็ม */
   max-width: 500px;
-  /* จำกัดความกว้างของภาพ */
   height: auto;
   overflow: hidden;
 }
@@ -187,15 +168,10 @@ nav a:hover {
 
 .column-right img {
   width: auto;
-  /* ใช้ความกว้างอัตโนมัติ */
   max-width: 100%;
-  /* จำกัดขนาดให้ไม่เกิน container */
   height: auto;
-  /* รักษาสัดส่วน */
   display: block;
-  /* ป้องกัน space ด้านข้าง */
   margin: 0 auto;
-  /* จัดให้อยู่กลาง */
 }
 
 button {
@@ -217,55 +193,37 @@ button:hover {
 
 .hero-image {
   width: 100%;
-  /* กำหนดความกว้างให้เต็ม */
   max-width: 500px;
-  /* จำกัดความกว้างของภาพ */
   height: auto;
 }
 
 .grid {
   display: grid;
-  /* เปิดใช้งาน Grid Layout */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  /* สร้าง 3 คอลัมน์เท่าๆ กัน */
   gap: 2rem;
-  /* เพิ่มระยะห่างระหว่างคอลัมน์ */
   padding: 3rem 2rem;
   background-color: antiquewhite;
-  /* สีพื้นหลังสำหรับ section */
   margin-bottom: 60px;
 }
 
 .grid-item {
   background-color: #ffffff;
   border: 3px solid #813d32;
-  /* สีพื้นหลังของแต่ละไอเท็ม */
   padding: 2rem;
   border-radius: 15px;
-  /* ทำมุมโค้งให้กับกล่อง */
   display: flex;
-  /* ใช้ Flexbox */
   flex-direction: column;
-  /* จัดเนื้อหาภายใน grid-item เป็นคอลัมน์ */
   align-items: center;
-  /* จัดตำแหน่งทุกอย่างในแนวนอน */
   justify-content: center;
-  /* จัดตำแหน่งทุกอย่างในแนวตั้ง */
   transition: 0.3s;
 }
 
-
 .grid-item img {
   width: 100%;
-  /* ให้ภาพเต็มความกว้างของ grid item */
   height: auto;
-  /* ปรับความสูงให้อัตโนมัติ */
   max-width: 150px;
-  /* กำหนดขนาดสูงสุดของภาพ */
   margin-bottom: 1rem;
-  /* เพิ่มระยะห่างจากข้อความ */
   object-fit: cover;
-  /* ครอบภาพให้เต็มพื้นที่ */
 }
 
 .grid-item:hover {
@@ -284,146 +242,101 @@ button:hover {
 
 .service {
   background-color: antiquewhite;
-  /* เพิ่มพื้นหลังที่อ่อน ๆ */
   padding: 40px 20px;
-  /* เพิ่มช่องว่างด้านบน-ล่าง */
   text-align: center;
-  /* จัดข้อความให้ตรงกลาง */
 }
 
 .section-title {
   font-size: 2.5rem;
-  /* ขนาดตัวอักษรที่ใหญ่ */
   font-weight: 700;
-  /* ทำให้ตัวหนา */
   color: black;
-  /* สีข้อความ */
   margin-bottom: 30px;
-  /* เพิ่มช่องว่างใต้ข้อความ */
   text-transform: uppercase;
-  /* ทำให้ข้อความเป็นตัวพิมพ์ใหญ่ทั้งหมด */
   letter-spacing: 2px;
-  /* เพิ่มการเว้นระยะตัวอักษร */
   position: relative;
-  /* เพื่อทำการใช้ line after */
 }
 
 .section-title::after {
   content: '';
   display: block;
   width: 60px;
-  /* ความยาวของเส้น */
   height: 3px;
-  /* ความหนาของเส้น */
   background-color: #813d32;
-  /* สีเส้น */
   margin: 20px auto 0;
-  /* จัดให้เส้นอยู่กลาง */
 }
 
 .learn-more {
   background-color: #813d32;
-  /* สีพื้นหลังของปุ่ม */
   color: white;
-  /* สีตัวอักษร */
   padding: 10px 20px;
-  /* ระยะห่างภายในปุ่ม */
   border: none;
-  /* ไม่มีขอบ */
   border-radius: 5px;
-  /* ขอบโค้ง */
   cursor: pointer;
-  /* เปลี่ยนเคอร์เซอร์เมื่อชี้ไปที่ปุ่ม */
   font-size: 1rem;
-  /* ขนาดตัวอักษร */
   transition: background-color 0.3s ease;
-  /* เปลี่ยนสีพื้นหลังเมื่อ hover */
   margin-top: 20px;
 }
 
 .learn-more:hover {
   background-color: #fdcc04;
-  /* เปลี่ยนสีพื้นหลังเมื่อ hover */
 }
 
 footer {
   background-color: white;
-  /* พื้นหลังสีเข้ม */
   color: #813d32;
-  /* สีข้อความขาว */
   padding: 40px 20px;
-  /* ช่องว่างด้านใน */
   text-align: center;
   font-weight: bolder;
 }
 
 .footer-container {
   display: flex;
-  /* ใช้ flexbox ในการจัดเรียง */
   justify-content: space-between;
-  /* จัดเรียงไอเท็มให้กระจาย */
   align-items: center;
-  /* จัดให้แนวตั้งตรงกลาง */
   max-width: 1250px;
-  /* กำหนดความกว้างสูงสุด */
   margin: 0 auto;
-  /* จัดให้อยู่กลาง */
 }
 
 .footer-logo img {
   max-width: 150px;
-  /* กำหนดขนาดของโลโก้ */
 }
 
 .footer-links ul {
   list-style: none;
-  /* ลบจุดจากลิสต์ */
   padding: 0;
   display: flex;
-  /* ใช้ flexbox ในการจัดเรียงลิงก์ */
 }
 
 .footer-links ul li {
   margin: 0 15px;
-  /* ช่องว่างระหว่างลิงก์ */
 }
 
 .footer-links a {
   text-decoration: none;
-  /* ลบขีดเส้นใต้ */
   color: black;
-  /* สีลิงก์ขาว */
   font-weight: bolder;
-  /* ข้อความหนานิดหน่อย */
 }
 
 .footer-links a:hover {
   color: #813d32;
-  /* เปลี่ยนสีเมื่อ hover */
 }
 
 .footer-social a {
   color: #813d32;
-  /* สีไอคอนโซเชียลขาว */
   margin: 0 10px;
-  /* ช่องว่างระหว่างไอคอน */
   font-size: 24px;
-  /* ขนาดของไอคอน */
 }
 
 .footer-social a:hover {
   color: black;
-  /* เปลี่ยนสีเมื่อ hover */
 }
 
 .footer-bottom {
   margin-top: 20px;
-  /* ช่องว่างระหว่างส่วนท้าย */
 }
 
 .footer-bottom p {
   font-size: 14px;
-  /* ขนาดตัวอักษร */
 }
 
 .affordable-pet-care {
@@ -441,18 +354,13 @@ footer {
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  /* สร้าง 2 คอลัมน์ */
   gap: 20px;
-  /* ช่องว่างระหว่าง item */
   justify-items: center;
-  /* จัดการให้อยู่กลาง */
   margin-top: 20px;
 }
 
-/* Hero section สำหรับ Affordable Pet Care */
 .hero-affordable-pet-care {
   background-color: antiquewhite;
-  /* สามารถเลือกพื้นหลังตามต้องการ */
   padding: 20px;
   text-align: left;
   margin-bottom: 170px;
@@ -470,35 +378,20 @@ footer {
   flex: 1;
   padding: 20px;
   background-color: white;
-  /* สีที่ใช้สำหรับข้อความ */
 }
 
 .hero-affordable-pet-care h1 {
   font-size: 36px;
   color: #813d32;
-  /* ใช้สีเข้มเพื่อให้ข้อความเด่นชัด */
   margin-bottom: 20px;
   padding: 15px 30px;
   background-color: #f9f9f9;
-  /* พื้นหลังสีอ่อนทำให้ข้อความเด่น */
   border: 2px solid #813d32;
-  /* กรอบบางๆ เพื่อเพิ่มมิติ */
   border-radius: 8px;
-  /* มุมโค้งเพื่อความนุ่มนวล */
   text-align: center;
-  /* จัดข้อความให้อยู่กลาง */
   text-transform: uppercase;
-  /* ตัวพิมพ์ใหญ่ทั้งหมด */
   letter-spacing: 1px;
-  /* เพิ่มการเว้นระยะตัวอักษรเพื่อให้อ่านง่ายขึ้น */
   line-height: 1.4;
-  /* เพิ่มระยะห่างระหว่างบรรทัด */
-}
-
-.hero-affordable-pet-care h1::before {
-  content: "";
-  display: none;
-  /* ซ่อนแอนิเมชั่นแสง */
 }
 
 .hero-affordable-pet-care p {
@@ -527,21 +420,16 @@ footer {
   }
 }
 
-/* Responsive Design */
 @media (max-width: 760px) {
   .hamburger {
     display: flex;
-    /* แสดง Hamburger Menu */
     top: 50%;
-    /* วางตำแหน่ง Hamburger ตรงกลางแนวตั้ง */
     transform: translateY(-50%);
   }
 
   nav {
     justify-content: center;
-    /* ให้โลโก้อยู่ตรงกลาง */
     position: sticky;
-    /* ตั้งตำแหน่งให้ Hamburger และ Logo ทำงานร่วมกัน */
     padding: 0 1rem;
   }
 
@@ -552,14 +440,12 @@ footer {
 
   .logo {
     position: absolute;
-    /* วางโลโก้ตรงกลาง */
     left: 50%;
     transform: translateX(-50%);
   }
 
   .nav-items {
     display: none;
-    /* ซ่อนเมนู */
     position: absolute;
     top: 80px;
     right: 0;
@@ -574,7 +460,6 @@ footer {
 
   .nav-items.active {
     display: flex;
-    /* แสดงเมนูเมื่อมี class active */
   }
 
   .nav-items ul {
@@ -605,18 +490,13 @@ footer {
 
   .column-right img {
     max-width: 80%;
-    /* ลดขนาดรูปภาพในหน้าจอเล็ก */
     height: auto;
-    /* คงอัตราส่วน */
     margin: 0 auto;
-    /* จัดให้อยู่กลาง */
     object-fit: cover;
-    /* ครอบรูปภาพให้เหมาะสม */
   }
 
   .grid-item img {
     max-width: 100px;
-    /* ลดขนาดรูปภาพลงเมื่อหน้าจอเล็ก */
   }
 
   .grid-container {
@@ -625,7 +505,6 @@ footer {
 
   .section-title {
     font-size: 1.8rem;
-    /* ขนาดข้อความเล็กลง */
     letter-spacing: 1px;
   }
 
@@ -635,16 +514,13 @@ footer {
 
   .service {
     padding: 30px 10px;
-    /* ลดช่องว่างด้านบน-ล่าง */
   }
 
   .hero-service-container {
     flex-direction: column;
-    /* เรียงในแนวตั้ง */
     align-items: center;
     text-align: center;
     padding: 10px 10px 0 10px;
-    /* ลด padding */
     margin: 10px;
   }
 
@@ -655,16 +531,12 @@ footer {
 
   .footer-container {
     flex-direction: column;
-    /* เปลี่ยนจากแถวเป็นคอลัมน์ */
     text-align: center;
-    /* จัดข้อความให้กลาง */
   }
 
   .footer-links ul {
     flex-direction: column;
-    /* เปลี่ยนจากแถวเป็นคอลัมน์ */
     margin-top: 20px;
-    /* ช่องว่างระหว่างลิงก์ */
   }
 
   .footer-links ul li {
@@ -677,7 +549,6 @@ footer {
 
   .footer-social {
     margin-top: 20px;
-    /* ช่องว่างระหว่างไอคอนโซเชียล */
   }
 
   .hero-affordable-pet-care .hero-container {
@@ -696,9 +567,6 @@ footer {
   .hero-service-container h1,
   .hero-service-container p {
     font-size: 1.2rem;
-    /* ลดขนาดตัวอักษร */
     text-align: center;
-    /* จัดข้อความให้อยู่กลาง */
   }
-
 }

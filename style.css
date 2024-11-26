@@ -517,7 +517,11 @@ footer {
   border-radius: 8px;
 }
 
-
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 /* Responsive Design */
 @media (max-width: 760px) {

@@ -173,12 +173,13 @@ nav a:hover {
 }
 
 .Member-info img {
-  width: 150px; /* ขนาดกว้างของรูป */
-  height: 150px; /* ขนาดสูงของรูป */
-  border-radius: 50%; /* ทำให้รูปภาพเป็นวงกลม */
-  object-fit: cover; /* ปรับรูปให้ครอบเต็มพื้นที่ */
+  width: 150px; /* ขนาดความกว้างของรูป */
+  height: 150px; /* ขนาดความสูงของรูป */
+  border-radius: 50%; /* ทำให้รูปเป็นวงกลม */
+  object-fit: cover; /* ให้รูปครอบเต็มวงกลม */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
-  margin-bottom: 1rem; /* เพิ่มช่องว่างใต้รูป */
+  margin-bottom: 1rem; /* เว้นช่องว่างด้านล่าง */
+  border: 5px solid #813d32; /* เพิ่มขอบสีรอบรูป */
 }
 
 .Member-info h3 {
